@@ -2,16 +2,54 @@ body {
   font-family: "mr-eaves-modern", Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  color: #272727;
 }
 
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "lust-display-didone", serif;
   margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+header nav, footer nav {
+  background-color: rgba(45, 71, 92, .8);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 60px);
+  padding: 15px 30px;
+}
+
+header nav {
+  position: fixed;
+}
+
+header nav ul, footer nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#logo {
+  width: 150px;
+  height: 50px;
 }
 
 .hero {
@@ -23,4 +61,32 @@ h1, h2, h3 {
   background-position: top right;
   background-size: cover;
   z-index: 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-copy {
+  width: 50%;
+  margin: 0px auto;
+}
+
+.callout {
+  /* background-image: url('../images/speckle-bg.png'); */
+  background-color: #DD8585;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+}
+
+.callout-copy {
+  margin: 0px auto;
+  width: 80%;
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
 }
