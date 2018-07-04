@@ -5,3 +5,14 @@ body {
 h1, h2, h3 {
   font-family: "lust-display-didone", serif;
 }
+
+.hero {
+  background-image: url('../images/hero-bg.png');
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: 0;
+}
