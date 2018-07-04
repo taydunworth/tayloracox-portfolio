@@ -5,6 +5,7 @@ body {
   font-size: 20px;
   color: #272727;
   font-weight: normal;
+  line-height: 28px;
 }
 
 h1,
@@ -12,6 +13,7 @@ h2,
 h3 {
   font-family: "lust-display-didone", serif;
   margin: 0;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -28,6 +30,10 @@ h4 {
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+h5 {
+  font-size: 1em;
 }
 
 .wrapper {
@@ -173,4 +179,14 @@ nav ul li a {
   letter-spacing: 3px;
   margin: 5px;
   font-weight: bold;
+}
+
+.involvement-opps, .speaking-opps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.involvement-ind, .speaking-ind {
+  width: 45%;
 }
