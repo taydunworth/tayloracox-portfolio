@@ -14,6 +14,7 @@ h3 {
   font-family: "lust-display-didone", serif;
   margin: 0;
   line-height: 1.5em;
+  color: rgb(45, 71, 92);
 }
 
 h1 {
@@ -105,7 +106,7 @@ nav ul li a {
   padding: 70px 0;
   display: flex;
   align-items: center;
-  z-index: 0;
+  z-index: -1;
   position: relative;
 }
 
@@ -196,47 +197,43 @@ nav ul li a {
 
 /* Accordion */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid rgb(221, 133, 133);
+  outline: none;
+  transition: 0.4s ease-in-out;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "mr-eaves-modern", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+  background-color: #f1f1f1;
 }
 
 .panel {
   padding: 0 18px;
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+  content: '\02795';
+  margin-left: 5px;
+  color: #436784;
 }
 
 .active:after {
-    content: "\2796";
-}
-
-.accordion:after {
-    content: '\02795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+  content: "\2796";
 }
 
 .work ul {
