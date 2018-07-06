@@ -2,6 +2,15 @@ import "./style/style.sass";
 import "./style/style.css";
 import * as work from "./work.js";
 
+// Mobile Nav
+
+const mobileNav = document.querySelector('.mobile-nav-menu')
+const mobileNavBtn = document.querySelector('.mobile-btn')
+
+mobileNavBtn.addEventListener('click', function() {
+  mobileNav.classList.toggle('mobile-nav-show')
+})
+
 const allWork = work.workItems;
 
 // Work
