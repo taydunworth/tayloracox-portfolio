@@ -87,9 +87,18 @@ nav ul li a {
   font-weight: normal;
   letter-spacing: 5px;
   font-size: .8em;
+  transition: all .3s ease-in-out;
 }
 
-#logo {
+nav ul li a:hover {
+  color: #dd8585;
+}
+
+nav p {
+  color: #fff;
+}
+
+.logo {
   width: 150px;
   height: 50px;
 }
@@ -175,7 +184,7 @@ nav ul li a {
   display: block;
   margin: 30px 0;
   padding: 15px 5px;
-  background-color: #436784;
+  background-color: #2d475c;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -183,6 +192,11 @@ nav ul li a {
   font-size: .8em;
   letter-spacing: 2px;
   border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1e3444;
 }
 
 .about .btn {
@@ -230,7 +244,7 @@ nav ul li a {
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
   font-size: .8em;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -295,9 +309,13 @@ nav ul li a {
 
 .work .btn {
   background-color: #fff;
-  color: rgb(45, 71, 92);
+  color: #2d475c;
   width: 70%;
   margin: 0px auto;
+}
+
+.work .btn:hover {
+  background-color: #e5e5e5;
 }
 
 .work-details {
@@ -307,7 +325,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all .4s ease-in-out;
+  transition: all .3s ease-in-out;
   opacity: 0;
 }
 
