@@ -32,18 +32,7 @@ for (let i = 0; i < allWork.length; i++) {
 
   workDiv.classList.add("work-box");
   workButton.classList.add("btn");
-  // hoverDiv.classList.add("hover-off");
   hoverDiv.classList.add("work-details");
-  //
-  // workDiv.addEventListener("mouseover", function() {
-  //   hoverDiv.classList.add("hover-on");
-  //   hoverDiv.classList.remove("hover-off");
-  // })
-  //
-  // workDiv.addEventListener("mouseout", function() {
-  //   hoverDiv.classList.add("hover-off");
-  //   hoverDiv.classList.remove("hover-on");
-  // })
 }
 
 // Accordion

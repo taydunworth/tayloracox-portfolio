@@ -37,6 +37,18 @@ h4 {
   letter-spacing: 5px;
 }
 
+h2:after, h4:after {
+  content: ' ';
+  display: block;
+  border-bottom: 1px solid #dd8585;
+  width: 100px;
+  padding: 10px 0;
+}
+
+h4:after {
+  margin: 0px auto;
+}
+
 h5 {
   font-size: 1em;
 }
@@ -63,7 +75,7 @@ header nav ul, footer nav ul {
   margin: 0;
   list-style-type: none;
   display: flex;
-  width: 30%;
+  width: 25%;
   justify-content: space-between;
   align-items: center;
 }
@@ -130,7 +142,7 @@ nav ul li a {
 .callout-copy {
   margin: 0px auto;
   width: 80%;
-  font-size: 2.3em;
+  font-size: 2em;
   text-align: center;
   color: #fff;
   z-index: 1;
@@ -153,6 +165,10 @@ nav ul li a {
 
 .about .right {
   text-align: right;
+}
+
+#headshot {
+  height: 350px;
 }
 
 .btn {
@@ -206,12 +222,13 @@ nav ul li a {
 /* Accordion */
 .accordion {
   color: #444;
+  background-color: #f1f1f1;
   cursor: pointer;
   padding: 18px;
+  margin: 5px 0;
   width: 100%;
   text-align: left;
   border: none;
-  border-bottom: 2px solid rgb(221, 133, 133);
   outline: none;
   transition: 0.4s ease-in-out;
   font-size: .8em;
@@ -224,7 +241,7 @@ nav ul li a {
 }
 
 .active, .accordion:hover {
-  background-color: #f1f1f1;
+  background-color: #e7e7e7;
 }
 
 .panel {
@@ -236,8 +253,7 @@ nav ul li a {
 
 .accordion:after {
   content: '\02795';
-  margin-left: 5px;
-  color: #436784;
+  text-align: center;
 }
 
 .active:after {
@@ -250,12 +266,13 @@ nav ul li a {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .work li {
-  width: 25%;
+  width: calc(25% - 20px);
+  padding: 10px 0;
   height: 300px;
 }
 
@@ -277,7 +294,8 @@ nav ul li a {
 }
 
 .work .btn {
-  background-color: rgb(221, 133, 133);
+  background-color: #fff;
+  color: rgb(45, 71, 92);
   width: 70%;
   margin: 0px auto;
 }
