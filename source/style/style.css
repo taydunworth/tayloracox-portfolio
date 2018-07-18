@@ -1,10 +1,10 @@
 body {
-  font-family: "mr-eaves-modern", Arial, sans-serif;
+  font-family: "ff-dagny-web-pro", Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-size: 20px;
   color: #272727;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 28px;
   width: 100%;
 }
@@ -262,7 +262,7 @@ nav p {
   font-size: .8em;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "mr-eaves-modern", Arial, sans-serif;
+  font-family: "ff-dagny-web-pro", Arial, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
