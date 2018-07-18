@@ -14,35 +14,48 @@ mobileNavBtn.addEventListener('click', function() {
 const allWork = work.workItems;
 
 // Work
-for (let i = 0; i < allWork.length; i++) {
-  const workList = document.querySelector(".work-list");
-  const workListItem = document.createElement("li");
-  const workDiv = document.createElement("div");
-  const hoverDiv = document.createElement("div");
-  const workTitle = document.createElement("h4");
-  const workImage = document.createElement("img");
-  const workButton = document.createElement("a");
-  const boxButton = document.createElement("a");
 
-  workTitle.innerHTML = allWork[i].title;
-  workButton.innerHTML = "Learn More";
-  workButton.href = allWork[i].url;
-  boxButton.href = allWork[i].url;
+if(window.location.href.indexOf("ironworks") === -1) {
+  for (let i = 0; i < allWork.length; i++) {
+    const workList = document.querySelector(".work-list");
+    const workListItem = document.createElement("li");
+    const workDiv = document.createElement("div");
+    const hoverDiv = document.createElement("div");
+    const workTitle = document.createElement("h4");
+    const workImage = document.createElement("img");
+    const workButton = document.createElement("a");
+    const boxButton = document.createElement("a");
 
-  workDiv.style.backgroundImage = `url(${allWork[i].img})`;
+    workTitle.innerHTML = allWork[i].title;
+    workButton.innerHTML = "Learn More";
+    workButton.href = allWork[i].url;
+    boxButton.href = allWork[i].url;
 
-  workDiv.appendChild(hoverDiv);
-  workDiv.appendChild(workImage);
-  hoverDiv.appendChild(workTitle);
-  hoverDiv.appendChild(workButton);
-  boxButton.appendChild(workDiv);
-  workListItem.appendChild(boxButton);
-  workList.appendChild(workListItem);
+    workDiv.style.backgroundImage = `url(${allWork[i].img})`;
 
-  workDiv.classList.add("work-box");
-  workButton.classList.add("btn");
-  hoverDiv.classList.add("work-details");
+    workDiv.appendChild(hoverDiv);
+    workDiv.appendChild(workImage);
+    hoverDiv.appendChild(workTitle);
+    hoverDiv.appendChild(workButton);
+    boxButton.appendChild(workDiv);
+    workListItem.appendChild(boxButton);
+    workList.appendChild(workListItem);
+
+    workDiv.classList.add("work-box");
+    workButton.classList.add("btn");
+    hoverDiv.classList.add("work-details");
+  }
 }
+
+// Ironworks
+if(window.location.href.indexOf("ironworks") > -1) {
+  const ironworks = document.querySelector("#ironworks-info");
+  const ironworksHero = document.querySelector(".internal-hero");
+  const ironworksInfo = allWork[3].description;
+  ironworksHero.style.backgroundImage = `url(${allWork[3].img})`;
+  ironworks.innerHTML = ironworksInfo;
+}
+
 
 // Accordion
 

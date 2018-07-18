@@ -19,7 +19,7 @@ h3 {
   font-family: "lust-display-didone", serif;
   margin: 0;
   line-height: 1.5em;
-  color: rgb(45, 71, 92);
+  color: #1e3444;
 }
 
 h1 {
@@ -117,10 +117,22 @@ nav p {
   align-items: center;
 }
 
+.internal-hero {
+  width: 100%;
+  height: 60vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0% 200%;
+  background-size: cover;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+}
+
 .hero-copy {
   width: 60%;
   margin: 0px auto;
-  color: rgb(45, 71, 92);
+  color: #1e3444;
   font-size: 1.3em;
   text-transform: lowercase;
 }
@@ -337,6 +349,14 @@ nav p {
   opacity: 1;
 }
 
+.work-info {
+  padding: 30px;
+}
+
+.work-info img {
+  width: 60%;
+}
+
 .mobile-nav {
   display: none;
 }
@@ -393,6 +413,7 @@ nav p {
     display: flex;
     text-align: right;
     align-items: center;
+    width: calc(100vw - 60px);
   }
 
   .mobile-nav-menu {
@@ -428,6 +449,10 @@ nav p {
     color: rgb(45, 71, 92);
     font-size: 1em;
     text-transform: lowercase;
+  }
+
+  footer {
+    display: none;
   }
 }
 
