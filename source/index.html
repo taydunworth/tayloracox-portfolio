@@ -14,23 +14,28 @@
     <meta name="twitter:card" content="summary_large_image">
   <title>Taylor A. Cox | Digital Designer and Front-End Developer</title>
   <link rel="stylesheet" href="https://use.typekit.net/dmv3kow.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
   <header>
-    <nav>
-      <a href="/"><img src="images/logo.svg" alt="Taylor A. Cox Logo" class="logo"></a>
+    <nav id="header-nav" class="static-nav">
+      <a href="/"><img src="images/logo-dk.svg" alt="Taylor A. Cox Logo" class="logo"></a>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#proficiences">Proficiences</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#community">Community</a></li>
         <!-- <li><a href="#work">Work</a></li> -->
         <li><a href="mailto:taylor@tayloracox.com">Contact</a></li>
       </ul>
     </nav>
-    <nav class="mobile-nav">
-     <img src="images/logo.svg" alt="Taylor A. Cox Logo" class="logo"><span class="mobile-btn"></span>
+    <nav class="mobile-nav" id="mobile-nav">
+     <img src="images/logo-dk.svg" alt="Taylor A. Cox Logo" class="logo"><span class="mobile-btn"></span>
      <ul class="mobile-nav-menu">
        <li><a href="#about">About</a></li>
+       <li><a href="#proficiences">Proficiences</a></li>
+       <li><a href="#speaking">Speaking</a></li>
+       <li><a href="#community">Community</a></li>
        <!-- <li><a href="#work">Work</a></li> -->
        <li><a href="mailto:taylor@tayloracox.com">Contact</a></li>
      </ul>
@@ -44,7 +49,7 @@
             <span
              class="type-effect"
              data-period="2000"
-             data-rotate='[ "a front-end developer.", "a digital designer.", "a logo enthusiast.", "a professional dog petter.", "ready to collaborate with you." ]'></span></h1>
+             data-rotate='[ "a front-end developer.", "a digital designer.", "an aspiring Pokémaster.", "a professional dog petter.", "ready to collaborate with you." ]'></span></h1>
         </div>
       </section>
 
@@ -72,7 +77,7 @@
         </div>
       </section>
 
-      <section class="buzzwords wrapper">
+      <section class="buzzwords wrapper" id="proficiences">
         <h4>Buzzwords</h4>
         <div class="word-collection">
           <ul>
@@ -108,30 +113,42 @@
       </section>
 
       <section class="about-addtl wrapper">
-        <div class="speaking">
+        <div class="speaking" id="speaking">
           <h4>Speaking Experience</h4>
           <button class="accordion">Should Designers Code?</button>
           <div class="panel">
-            <!-- <p><strong>Suncoast.js Meetup</strong></p> -->
+            <p><strong>Suncoast.js Meetup</strong></p>
             <p>In an attempt to bring value to the age-old debate and to expand my skill set in the tech industry, I spent the past year transitioning from the title of graphic designer to front-end developer. At this event, I discussed my journey, my time spent at a coding bootcamp, and the positives and negatives of having a background in design as a developer.</p>
           </div>
 
-          <button class="accordion">“Just Do This,” “It’s Easy,” and Other Ways You’re Discouraging Developers</button>
-          <div class="panel">
-            <!-- <p><strong>Suncoast.js Meetup</strong></p> -->
-            <p>It’s a common occurrence in the code community, and most people don’t even know they’re doing it. Let’s dive into the top mistakes developers make when interacting with one another and how to become a more encouraging communicator. This talk included familiar triggers that dishearten coders, ways to be more cognizant of your communication methods, and how to foster a more inclusive environment in the workplace and community at large.</p>
-          </div>
-
-          <!-- <button class="accordion">&lt;br /&gt; ing up with Design</button>
+          <button class="accordion">&lt;br /&gt; ing up with Design</button>
           <div class="panel">
             <p><strong>CMS Summit 2018</strong></p>
             <p>To expand my skill set in the tech industry, I spent the past year or so transitioning from the title of graphic designer to front-end developer and confronting the age-old debate of "should designers learn to code?"</p>
             <p>Sure, the two roles are closely related, but how do you make that pivot in a short amount of time? Do you completely abandon your past life as a designer and fully embrace your newfound love of development or embrace their coexistence?</p>
             <p>This talk discusses my journey, how I made the pivot between the two careers, and the positives and negatives of having a background in design as a developer.</p>
-          </div> -->
+          </div>
+
+          <button class="accordion">Intro to CSS</button>
+          <div class="panel">
+            <p><strong>Suncoast Developers Guild Crash Courses</strong></p>
+            <p>Learn how to get started styling your HTML projects with CSS (cascading style sheets).</p>
+          </div>
+
+          <button class="accordion">"Just Do This," "It's Easy," and Other Ways You’re Discouraging Developers</button>
+          <div class="panel">
+            <p><strong>Suncoast.js Meetup</strong></p>
+            <p>It’s a common occurrence in the code community, and most people don’t even know they’re doing it. Let’s dive into the top mistakes developers make when interacting with one another and how to become a more encouraging communicator. This talk included familiar triggers that dishearten coders, ways to be more cognizant of your communication methods, and how to foster a more inclusive environment in the workplace and community at large.</p>
+          </div>
+
+          <button class="accordion">Upcoming: Responsive Layouts with Bootstrap, Flexbox, and CSS Grid</button>
+          <div class="panel">
+            <p><strong>JoomlaDay Florida 2019</strong></p>
+            <p>Creating responsive layouts is getting easier and easier with the likes of CSS Grid, Flexbox, and Bootstrap, but which is the right one to choose and why should you use one of these at all? We'll dive into how to get up and running with using these three responsive layout tools, their practical applications, and their future in the front-end design world.</p>
+          </div>
         </div>
 
-        <div class="involvement">
+        <div class="involvement" id="community">
           <h4>Community Involvement</h4>
           <button class="accordion">Suncoast Developers Guild Jr.</button>
           <div class="panel">
@@ -139,17 +156,20 @@
             <p>Suncoast Developers Guild hosts kids classes one night per week for a four week period teaching kids ages 8-12 fundamentals of HTML structure, the box model, CSS, typography, JavaScript, and programming.</p>
           </div>
 
-          <!-- <button class="accordion">Girl Develop It Tampa Bay</button>
+          <button class="accordion">Girl Develop It Tampa Bay</button>
           <div class="panel">
-            <p><strong>Social Media Content Creator</strong></p>
-            <p>Lorem ipsum dolor amet literally hammock crucifix plaid subway tile franzen. Farm-to-table microdosing woke, butcher cliche wolf williamsburg asymmetrical. Trust fund messenger bag hammock seitan, selvage unicorn mumblecore.</p>
-          </div> -->
+            <p><strong>Co-Chapter Leader</strong></p>
+          </div>
 
-          <button class="accordion">St. Pete Coder Dojo</button>
+          <button class="accordion">Tampa Bay Startup Week</button>
           <div class="panel">
-            <p><strong>Teaching Assistant</strong></p>
-            <p>St. Pete Coder Dojo provides computer science and STEM education to kids in an after school setting.</p>
-            <p>In these classes, students create programs with different kinds of loops, events, functions, and conditionals. They also investigate different problem-solving techniques and discuss societal impacts of computing and the internet.</p>
+            <p>
+              <strong>
+                Startup Weekend Mentor
+                <br>
+                Conference Track Organizer
+              </strong>
+            </p>
           </div>
         </div>
       </section>

@@ -146,3 +146,34 @@ window.onload = function() {
   css.innerHTML = '.type-effect > .wrap { border-right: 0.08em solid #666 }'
   document.body.appendChild(css)
 }
+
+// Nav Change
+
+const nav = document.getElementById('header-nav');
+const mobilenav = document.getElementById('mobile-nav');
+
+window.addEventListener('scroll', function(e) {
+    event.preventDefault();
+    if (window.scrollY <= 150) {
+      nav.classList.add("static-nav");
+      nav.classList.remove("scroll-nav");
+      mobilenav.classList.add("static-nav");
+      mobilenav.classList.remove("scroll-nav");
+    } else {
+      nav.classList.add("scroll-nav");
+      nav.classList.remove("static-nav");
+      mobilenav.classList.add("scroll-nav");
+      mobilenav.classList.remove("static-nav");
+    }
+});
+
+window.addEventListener('scroll', function(e) {
+    event.preventDefault();
+    if (window.scrollY <= 150 && mobilenav != null) {
+      mobilenav.classList.add("static-nav");
+      mobilenav.classList.remove("scroll-nav");
+    } else {
+      mobilenav.classList.add("scroll-nav");
+      mobilenav.classList.remove("static-nav");
+    }
+});
